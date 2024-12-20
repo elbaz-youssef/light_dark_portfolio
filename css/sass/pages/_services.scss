@@ -1,0 +1,73 @@
+@use '../abstracts' as *;
+/* style of services page */ 
+.hide {
+    opacity: 0;
+    transition: opacity .3s;
+    &:nth-of-type(2) {
+        transition-delay: .3s;
+    }
+    &:nth-of-type(3) {
+        transition-delay: .6s;
+    }
+}
+.show {
+    opacity: 1;
+}
+.services {
+    background-color: var(--white);
+    .service-item {
+        max-width: 300px;
+        position: relative;
+        z-index: 1;
+        background-color: var(--white);
+        border: 1.3px solid var(--white-light);
+        &::before {
+            @include after(0,0,40px,40px,var(--white-light)) {
+                z-index: -1;
+                border-bottom-right-radius: 40px;
+                transition: all 0.5s;
+            }
+        } 
+        &:hover::before {
+            background-color: var(--black);
+            width: 100%;
+            height: 100%;
+            border-bottom-right-radius: 0;
+        } 
+        &:hover .service-item-heading {
+            color: var(--white);
+        } 
+        .service-item-icon {
+            margin: {
+                top: 10px;
+                bottom: 25px;
+            }
+            color: var(--blue);
+        }
+        .service-item-heading {
+            color: var(--black);
+            transition: color 0.5s;
+        }
+        .service-item-descr {
+            font-size: $fs-p;
+            color: var(--gray);
+            margin-bottom: 25px;
+            line-height: $lh-p;
+            letter-spacing: $ls-p;
+            word-spacing: $ws-p;
+        }
+        .service-item-btn {
+            font-size: $fs-l;
+            letter-spacing: $ls-l;
+            word-spacing: $ws-l;
+            border: 1.5px solid var(--blue);
+            color: var(--blue);
+            transition: all 0.5s;
+        }
+        .service-item-btn:hover {
+            background-color: var(--blue);
+            color: #fff;
+        }
+    }
+}
+

@@ -1,0 +1,103 @@
+/* style of footer */ 
+@use '../abstracts' as *;
+.footer {
+    background-color: #333;
+    text-transform: capitalize;
+    padding-bottom: 90px;
+    h5 {
+        margin-bottom: 10px;
+        margin-left: 5px;
+        color: #f1f1f1;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    h5 span {
+        display: block;
+        color: #999;
+        font-size: 15px;
+        margin-left: 5px;
+        letter-spacing: normal;
+    }
+    .footer-heading {
+        width: fit-content;
+        color: #fff;
+        border-bottom: 1px solid #777;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .links {
+        .links-items {
+            li {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            a {
+                color: #f1f1f1;
+                padding: 5px;
+                font-size: 14px;
+                letter-spacing: 1px;
+                transition: color 0.3s;
+                &:hover {
+                    color: var(--blue);
+                }
+            }
+        }
+    }
+    .socials {
+        .socials-items {
+            li {
+                margin-bottom: 10px;
+            }
+            a {
+                display: inline-block;
+                color: #f1f1f1;
+                width: 35px;
+                height: 35px;
+                background-color: var(--blue);
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                transition: 0.3s;
+                position: relative;
+                &:hover {
+                    background-color: transparent;
+                    svg {
+                        color: var(--blue);
+                    }
+                    &::after {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                &::after {
+                    @include after(0,0,100%,100%, transparent) {
+                        // z-index: -1;
+                        border: 2px solid #fff;
+                        border-left: 0;
+                        border-radius: 50%;
+                        animation: rot 2s linear infinite;
+                        transition: 0.3s;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                }
+            }
+            svg {
+                color: #fff;
+                font-size: 20px;
+                transition: 0.3s;
+            }
+        }
+    }
+    .copyright {
+        font-size: 14px;
+        letter-spacing: 1.6px;
+    }
+}
+
+
+@keyframes rot {
+    100% {
+        rotate: 1turn;
+    }
+}

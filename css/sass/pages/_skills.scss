@@ -1,0 +1,51 @@
+/* style of skills page */ 
+@use '../abstracts' as *;
+
+.skills {
+    background: var(--white);
+    .skill-img {
+        height: 350px;
+        img {
+            height: 100%;
+        }
+    }
+    .skill-content {
+        .skill-item {
+            text-transform: capitalize;
+            .skill {
+                color: var(--black);
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .percent {
+                font-size: 12px;
+                border: 1.5px solid var(--white-light);
+                border-radius: 5px;
+                padding: 3px 6px;
+                color: var(--blue);
+            }
+        }
+        .skill-item-bar {
+            position: relative;
+            z-index: 1;
+            background-color: #f1f1f1;
+            height: 20px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            &::after {
+                @include after(0,0,var(--perc),100%,var(--blue)) {
+                    z-index: -1;
+                }
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.5s linear;
+            }
+        }
+    }
+}
+
+.scale::after {
+    transform: scaleX(1) !important;
+}
+    
+

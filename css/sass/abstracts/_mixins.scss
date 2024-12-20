@@ -1,0 +1,49 @@
+//	mixins.scss for portfolio 
+@mixin after($top,$left,$width,$height,$bg) {
+    content: '';
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    background-color: $bg;
+    @content;
+}
+@mixin before($top,$left,$width,$height,$bg) {
+    @include after($top, $left, $width, $height, $bg);
+    @content;
+}
+
+// mixin of media queries
+@mixin media($width) {
+    @if($width == 'xs') {
+        @media (min-width: 0) {
+            @content;
+        }
+    }
+    @else if($width == 'sm') {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+    @else if($width == 'md') {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if($width == 'lg') {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @else if($width == 'xl') {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else if($width == 'xxl') {
+        @media (min-width: 1400px) {
+            @content;
+        }
+    }
+}

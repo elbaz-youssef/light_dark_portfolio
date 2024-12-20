@@ -1,0 +1,90 @@
+@use '../abstracts' as *;
+/* style of header */ 
+.header {
+    background-color: var(--white);
+    z-index: 100;
+    .header-container {
+        min-height: 65px;
+    }
+    .header-logo {
+        .logo {
+            color: var(--blue);
+            span {
+                width: 4px;
+                height: 4px;
+                // border-radius: 50%;
+                background-color: var(--blue);
+            }
+        }
+    }
+    .header-nav {
+        .bar {
+            span {
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: var(--black);
+                direction: rtl;
+                &:first-child {
+                    transition: transform 0.2s, border-radius 0.2s;
+                }
+                &:nth-child(2) {
+                    transition: transform 0.4s, border-radius 0.2s;
+                }
+                &:last-child {
+                    transition: transform 0.6s, border-radius 0.2s;
+                }
+            }
+            &:hover span {
+                transform: scale(7,0.5);
+                transform-origin: right center;
+                border-radius: 0;
+            }
+        }
+        .mode {
+            .light {
+                display: none;
+            }
+            svg {
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                border-radius: 50%;
+                color: var(--black);
+                background-color: var(--white-light);
+                opacity: 0.8;
+                transition: opacity 0.3s;
+            }
+            svg:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .header-list {
+        > li > a {
+            color: var(--black);
+            font-size: $fs-l;
+            letter-spacing: $ls-l;
+            position: relative;
+            padding: 0.25rem 0.5rem;
+            transition: color 0.3s;
+        }
+        > li.active > a {
+            color: #fff;
+        }
+        li:not(.active) a:hover::after,li.active a::after {
+            width: 100%;
+            height: 100%;
+        }
+        > li:not(.active) > a:hover {
+            color: #fff;
+        }
+        > li > a::after {
+            @include after(0,0,0,0,var(--blue)) {
+                z-index: -1;
+                transition: width 0.3s, height 0.3s;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+/* style of about page */ 
+@use '../abstracts' as *;
+.about {
+    background-color: var(--blue-light);
+    .about-item-descr {
+        color: var(--gray);
+        font-size: $fs-p;
+        line-height: $lh-p;
+        letter-spacing: $ls-p;
+        word-spacing: $ws-p;
+    }
+}

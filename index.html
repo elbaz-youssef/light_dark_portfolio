@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Youssef</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Font Awesome CSS -->
+   <link rel="stylesheet" type="text/css" href="css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Mooli&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   <!-- preloader -->
+   <div class="preloader | position-fixed w-100 h-100 bg-dark d-flex align-items-center justify-content-center" id="preloader">
+      <div class="preloader-content text-white">
+            <div class="dash first"></div>
+            <div class="dash seconde"></div>
+            <div class="dash third"></div>
+            <div class="dash fourth"></div>
+      </div>
+   </div>
+   <!-- start header section -->
+   <header class="header | position-relative top-0 start-0 w-100">
+      <div class="| container h-100">
+         <div class="header-container | d-flex jutify-content-between align-items-center h-100">
+            <div class="header-logo">
+               <a class="logo | fw-bold fs-5" href="#home">
+                  Youssef<span class="| d-inline-block rounded-circle ms-1"></span>
+               </a>
+            </div>
+            <nav class="header-nav | d-flex align-items-center ms-auto">
+               <ul class="header-list d-none d-md-flex gap-1 text-capitalize">
+                  <li class="list-item active"><a href="#home">home</a></li>
+                  <li class="list-item"><a href="#services">services</a></li>
+                  <li class="list-item"><a href="#projects">projects</a></li>
+                  <li class="list-item"><a href="#skills">skills</a></li>
+                  <li class="list-item"><a href="#about">about</a></li>
+                  <li class="list-item"><a href="#contact">contact</a></li>
+               </ul>
+               <div class="mode">
+                  <span class="dark">
+                     <i class="fa-solid fa-moon | ms-4 pointer"></i>
+                  </span>
+                  <span class="light">
+                     <i class="fa-solid fa-sun | ms-4 pointer"></i>
+                  </span>
+               </div>
+               <div class="bar | p-2 ms-4 d-block d-md-none pointer">
+                  <span class="mb-1"></span>
+                  <span class="mb-1"></span>
+                  <span></span>
+               </div>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+   <!-- start home page -->
+   <main class="section main | position-relative overflow-hidden pt-md-5 d-flex align-items-center d-md-block" id="home">
+      <div class="| container">
+         <div class="main-container | row">
+            <div class="main-content | col-10 col-sm-8 col-md-6 m-auto">
+               <h1 class="main-heading | text-capitalize mt-2 mb-4 mb-md-2 mtext-center text-md-start">front end developer</h1>
+               <ul class="main-descr trans-to-up">
+                  <li><span>&lt;name&gt;</span>youssef<span>&lt;/name&gt;</span></li>
+                  <li><span>&lt;country&gt;</span>morocco<span>&lt;/country&gt;</span></li>
+                  <li><span>&lt;city&gt;</span>agadir<span&lt;><span>&lt;/city<span>&gt;</span></li>
+                  <li><span>&lt;age&gt;</span>21<span&lt;><span>&lt;/age<span>&gt;</span></li>
+               </ul>
+               <!-- <p class="main-descr">Hi i am <span class="name | fw-bolc">Youssef</span><br/>from <span class="country">Morocco</span> <br/> <span class="age">21</span> years old</p> -->
+            </div>
+            <div class="img trans-to-up | d-none d-md-block col-md-6">
+               <img class="img-fluid" src="images/landing-image.png" alt="pic">
+            </div>
+         </div>
+      </div>
+      <a href="#services" id="scroll-icon" class="scroll-down | d-flex flex-column position-absolute start-50 translate-middle-x pointer">
+         <i class="fa-solid fa-angle-down fa-2x"></i>
+         <i class="fa-solid fa-angle-down fa-2x"></i>
+      </a>
+   </main>
+
+   <!-- start services page -->
+   <div class="section services py" id="services">
+      <h2 class="heading-two | hidden position-relative m-auto mb-5">services</h2>
+      <div class="container">
+         <div class="services-container | d-flex flex-column align-items-center flex-md-row justify-content-md-center justify-content-lg-between gap-3 flex-wrap text-center">
+            <div class="hide service-item | py-4 px-2">
+               <i class="service-item-icon fa-solid fa-code fa-2x"></i>
+               <h3 class="service-item-heading | text-capitalize">web development</h3>
+               <p class="service-item-descr">I am create some beautiful user-friendly websites</p>
+               <button class="service-item-btn btn rounded rounded-pill">Learn more</button>
+            </div>
+            <div class="hide service-item | py-4 px-2">
+               <i class="service-item-icon fa-solid fa-mobile-alt fa-2x"></i>
+               <h3 class="service-item-heading | text-capitalize">responsive design</h3>
+               <p class="service-item-descr">I am doing websites that work well on all devices</p>
+               <button class="service-item-btn btn rounded rounded-pill">Learn more</button>
+            </div>
+            <div class="hide service-item | py-4 px-2">
+               <i class="service-item-icon fa-solid fa-magic-wand-sparkles fa-2x"></i>
+               <h3 class="service-item-heading | text-capitalize">interactivity</h3>
+               <p class="service-item-descr">I can make your website more interactive by adding animations</p>
+               <button class="service-item-btn btn rounded rounded-pill">Learn more</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="spike"></div>
+   <!-- start projects page -->
+   <div class="section projects py" id="projects">
+      <h2 class="heading-two | hidden position-relative m-auto mb-5">projects</h2>
+      <div class="container">
+         <div class="projects-container text-center d-flex justify-content-center justify-content-lg-between flex-wrap gap-3">
+            <div class="project-item pb-3 toLeft">
+               <span class="number">1</span>
+               <div class="project-item-img">
+                  <img class="img-fluid" src="images/work-steps.png" alt="girl">
+               </div>
+               <p class="project-item-descr px-3 mt-3">this project is a website that i take it's ui/ux from frontmenter website</p>
+               <a href="#" class="project-item-link btn rounded-pill">Navigate now</a>
+            </div>
+            <div class="project-item pb-3 toLeft">
+               <span class="number">2</span>
+               <div class="project-item-img">
+                  <img class="img-fluid" src="images/work-steps.png" alt="girl">
+               </div>
+               <p class="project-item-descr px-3 mt-3">this project is a website that i take it's ui/ux from frontmenter website</p>
+               <a href="#" class="project-item-link btn rounded-pill">Navigate now</a>
+            </div>
+            <div class="project-item pb-3 toLeft">
+               <span class="number">3</span>
+               <div class="project-item-img">
+                  <img class="img-fluid" src="images/work-steps.png" alt="girl">
+               </div>
+               <p class="project-item-descr px-3 mt-3">this project is a website that i take it's ui/ux from frontmenter website</p>
+               <a href="#" class="project-item-link btn rounded-pill">Navigate now</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- start skills page -->
+   <div class="section skills py" id="skills">
+      <h2 class="heading-two | hidden position-relative m-auto mb-5">skills</h2>
+      <div class="container">
+         <div class="skills-container d-md-flex align-items-center">
+            <div class="skill-img w-100 w-sm-75 w-md-50 m-auto m-md-0">
+               <img class="img-fluid" src="images/skills.webp" alt="skills">
+            </div>
+            <div class="skill-content w-100 w-sm-75 w-md-50 m-auto m-md-0">
+               <div class="skill-item d-flex justify-content-between">
+                  <div class="skill">HTML</div>
+                  <div class="percent">85%</div>
+               </div>
+               <div style="--perc: 85%" class="skill-item-bar"></div>
+               <div class="skill-item d-flex justify-content-between">
+                  <div class="skill">CSS</div>
+                  <div class="percent">80%</div>
+               </div>
+               <div style="--perc: 80%" class="skill-item-bar"></div>
+               <div class="skill-item d-flex justify-content-between">
+                  <div class="skill">SASS</div>
+                  <div class="percent">90%</div>
+               </div>
+               <div style="--perc: 90%" class="skill-item-bar"></div>
+               <div class="skill-item d-flex justify-content-between">
+                  <div class="skill">Bootstrap</div>
+                  <div class="percent">80%</div>
+               </div>
+               <div style="--perc: 80%" class="skill-item-bar"></div>
+               <div class="skill-item d-flex justify-content-between">
+                  <div class="skill">JavaScript</div>
+                  <div class="percent">70%</div>
+               </div>
+               <div style="--perc: 70%" class="skill-item-bar"></div>
+               <div class="skill-item d-flex justify-content-between">
+                  <div class="skill">Git</div>
+                  <div class="percent">75%</div>
+               </div>
+               <div style="--perc: 75%" class="skill-item-bar"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="spike"></div>
+   <!-- start about page -->
+   <div class="section about py" id="about">
+      <h2 class="heading-two | hidden position-relative m-auto mb-5">about</h2>
+      <div class="container">
+         <div class="about-container">
+            <div class="about-item mb-3 d-flex flex-column flex-md-row align-items-center">
+               <div class="about-item-img w-100 w-sm-75 w-md-50">
+                  <img class="img-fluid mb-2" src="images/istockphoto-1295823260-612x612.webp" alt="about">
+               </div>
+               <div class="about-item-content w-100 w-sm-75 w-md--50 ps-2">
+                  <p class="about-item-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ad maiores, optio sit accusamus dolore omnis vitae magnam veniam ducimus soluta quasi voluptate assumenda similique aspernatur suscipit minus dolorem nostrum. Doloremque recusandae dolorum consectetur tempore voluptatum cupiditate sunt, eveniet quidem.</p>
+               </div>
+            </div>
+            <div class="about-item d-flex flex-column flex-md-row align-items-center">
+               <div class="about-item-content w-100 w-sm-75 w-md-50 pe-2 order-2 order-md-1">
+                  <p class="about-item-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ad maiores, optio sit accusamus dolore omnis vitae magnam veniam ducimus soluta quasi voluptate assumenda similique aspernatur suscipit minus dolorem nostrum. Doloremque recusandae dolorum consectetur tempore voluptatum cupiditate sunt, eveniet quidem.</p>
+               </div>
+               <div class="about-item-img w-100 w-sm-75 w-md-50 order-1 order-md-2">
+                  <img class="img-fluid mb-2" src="images/istockphoto-1302474481-612x612.webp" alt="about">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- start contact page -->
+   <div class="section contact py" id="contact">
+      <h2 class="heading-two | hidden position-relative m-auto mb-5">get in touch</h2>
+      <form class="contact-form">
+         <input id="username" class="mb-3" type="text" placeholder="Username">
+         <input id="email" class="mb-3" type="email" placeholder="Email">
+         <textarea id="text-area" rows = 5 class="mb-3" placeholder="Write your message here"></textarea>
+         <input class="submit | text-capitalize" type="submit" value="send">
+      </form>
+   </div>
+   
+   <!-- start footer section -->
+   <div class="footer pt-5 position-relative overflow-hidden">
+      <div class="container">
+         <div class="footer-content d-flex flex-row justify-content-center justify-content-sm-between flex-wrap gap-5">
+            <div class="links">
+               <h4 class="footer-heading links-heading pb-2 mb-3">links</h4>
+               <ul class="links-items">
+                  <li>
+                     <a href="#home">home</a>
+                  </li>
+                  <li>
+                     <a href="#services">services</a>
+                  </li>
+                  <li>
+                     <a href="#projects">projects</a>
+                  </li>
+                  <li>
+                     <a href="#skills">skills</a>
+                  </li>
+                  <li>
+                     <a href="#about">about</a>
+                  </li>
+                  <li>
+                     <a href="#contact">contact</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="socials">
+               <h4 class="footer-heading socials-heading pb-2 mb-3">follow us</h4>
+               <ul style="font-size: 0" class="socials-items">
+                  <!-- this list has an inline style -->
+                  <li style="display: inline-block; margin-right: 35px">
+                     <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                     </a>
+                  </li>
+                  <li style="display: inline-block">
+                     <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                     </a>
+                  </li>
+                  <li style="transform: translateX(35px)">
+                     <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                     </a>
+                  </li>
+                  <li style="display: inline-block; margin-right: 35px">
+                     <a href="#">
+                        <i class="fa-brands fa-github-alt"></i>
+                     </a>
+                  </li>
+                  <li style="display: inline-block">
+                     <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="contact-info">
+               <h4 class="footer-heading pb-2 mb-3">Contact Me</h4>
+               <h5>Email: <span>onep26128@gmail.com</span></h5>
+               <h5>Phone: <span>+212 616657085</span></h5>
+               <h5>Address: <span>Morocco, Agadir</span></h5>
+            </div>
+         </div>
+      </div>
+   <div class="copyright | position-absolute bottom-0 w-100 bg-dark text-center text-light py-3 ps-2 pe-2">Copyright &copy; <span id="copyright-year"></span> | All Rights Reserved</div>
+   </div>
+   <!-- copyright part -->
+
+
+      
+
+   
+   <!-- Bootstrap JS -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Font Awesome JS -->
+   <script src="js/all.min.js"></script>
+   <!-- Your custom JS -->
+   <script src="js/main.js"></script>
+</body>
+</html>

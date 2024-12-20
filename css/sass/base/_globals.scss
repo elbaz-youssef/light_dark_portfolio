@@ -1,0 +1,44 @@
+/* global styles */
+*,::before,::after {				
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+body,html {				
+	width: 100%;
+	overflow-x: hidden
+}
+body {
+	font-family: 'Cairo', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+ul,ol,dl {				
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+a {				
+	text-decoration: none
+}
+.pointer {
+	cursor: pointer
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+:root {
+	--blue: #0d6efd;
+	--blue-light: #f4f9fb;
+	--white: #fff;
+	--white-light: #f1f1f1;
+	--black: #333;
+	--gray: #888;
+	--red: #e06c75;
+	--green: #1bc5bd
+ }
+
+ ::selection {
+	background-color: var(--blue);
+	color: var(--white)
+ }
